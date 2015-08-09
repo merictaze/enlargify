@@ -1,12 +1,20 @@
 # Enlargify
-Enlargify is a chatroulette or omegle like application which allows users to have video/audio/text chat with random people. It uses EasyRTC project which built on top of WebRTC.
+> Enlargify is a chatroulette or omegle like application which allows users to have video/audio/text chat with random people. It uses EasyRTC project which built on top of WebRTC.
+<hr>
 
-## Online Demo
+# Table of Contents
+
+* [Online Demo](#demo)
+* [Installation](#installation)
+* [Directory Structure](#structure)
+* [License](#licence)
+
+## <a name="demo"></a>Online Demo
 You can find the demo deployed on heroku at the following address:
 
 http://enlargify.herokuapp.com
 
-## Installation
+## <a name="installation"></a>Installation
 * Clone the project
 
   ```
@@ -31,7 +39,7 @@ http://enlargify.herokuapp.com
   ```
 * Check it on your browser http://localhost:5000
 
-## Directory structure
+## <a name="structure"></a>Directory Structure
 ```
 enlargify/
 ├── server.js               : Server side nodejs script
@@ -46,5 +54,5 @@ enlargify/
         ├── css/app.css
 ```
 
-## License
+## <a name="licence"></a>License
   [MIT](LICENSE)
