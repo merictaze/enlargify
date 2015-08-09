@@ -25,6 +25,7 @@ http://enlargify.herokuapp.com
   npm install
   ```
 * Run the application
+
   ```
   nodejs server.js
   ```

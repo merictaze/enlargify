@@ -57,14 +57,14 @@
 
   // get the partner video stream - triggered on sucessful call
   easyrtc.setStreamAcceptor( function(callerId, stream) {
-      var video = document.getElementById('partnerVideo');
-      easyrtc.setVideoObjectSrc(video,stream);
+    var video = document.getElementById('partnerVideo');
+    easyrtc.setVideoObjectSrc(video,stream);
   });
   
   // stop to receive the partner video stream - triggered on hangup call
   easyrtc.setOnStreamClosed( function (callerId) {
-      var video = document.getElementById('partnerVideo');
-      easyrtc.setVideoObjectSrc(video, '');
+    var video = document.getElementById('partnerVideo');
+    easyrtc.setVideoObjectSrc(video, '');
   });
   
   function connect() {
@@ -153,8 +153,8 @@
 
   // auto-accept the call
   easyrtc.setAcceptChecker(function(callerId, callback) {
-      //callback(callerId == self.partnerId);
-      callback(true);
+    //callback(callerId == self.partnerId);
+    callback(true);
   });
   
   function hangupCall() {
