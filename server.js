@@ -13,8 +13,9 @@ httpApp.get("/", function(req, res) {
     res.sendfile(__dirname + "/index.html");
 });
 
-// start Express http server on port 8080
-var webServer = http.createServer(httpApp).listen(8080);
+// start Express http server
+var port = process.env.PORT || 5000;
+var webServer = http.createServer(httpApp).listen(port);
 
 // start Socket.io so it attaches itself to Express server
 var io = sio.listen(webServer, {"log level":1});
